@@ -1,0 +1,68 @@
+.slider-area {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slider-area .container {
+  background: #003d8f;
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  padding: 60px 0;
+  width: 50%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+.slider-content {
+  text-align: center;
+}
+.slider-title h2 {
+  font-size: 50px;
+  color: #f5f8ff;
+  padding-bottom: 25px;
+}
+.slider-title h3 {
+  color: #9d9d9d;
+  /* color: #cb2c2c; */
+  font-weight: 600;
+}
+.user-input input {
+  height: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+  border: none;
+  background: #fbfbff;
+  box-shadow: 0 3px 6px 0px rgb(0 0 0 / 5%);
+  border: 1px solid #dde6ef;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+.user-input input:focus {
+  border-color: #9d9d9d;
+}
+#login-btn {
+  background: #9d9d9d;
+  transition: 0.3s;
+  width: 350px;
+  padding: 7px 0;
+  font-weight: 700;
+  border: none;
+}
+#login-btn:hover {
+  background: #cb2c2c;
+  color: #fff;
+}
+.note p {
+  color: #9d9d9d;
+  padding-top: 20px;
+}
+.caution {
+  color: #cb2c2c;
+  font-weight: 800;
+}
+.email-add,
+.pass {
+  font-weight: 700;
+  color: #fff;
+}
