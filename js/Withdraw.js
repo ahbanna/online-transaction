@@ -1,38 +1,33 @@
+// ---------- NOT USING COMMON FUNCTION -------------//
 document.getElementById("withdraw-btn").addEventListener("click", function () {
-  // new withdraw
-  const withdrawInput = document.getElementById("withdraw-input");
-  const newWithdraw = parseFloat(withdrawInput.value);
+  // New withdraw
+  const getNewWithdraw = document.getElementById("withdraw-input");
+  const newWithdraw = parseFloat(getNewWithdraw.value);
 
-  // clear withdraw input
-  withdrawInput.value = "";
-
-  // check if the input number is not a number
-  if (isNaN(newWithdraw)) {
-    alert("Please input valid number");
-    return;
-  }
+  //clear
+  getNewWithdraw.value = "";
 
   // previous withdraw
-  const preWithdraw = document.getElementById("pre-withdraw");
-  const previousWithdraw = parseFloat(preWithdraw.innerText);
+  const getPreWithdraw = document.getElementById("pre-withdraw");
+  const preWithdraw = parseFloat(getPreWithdraw.innerText);
 
-  // previosu balance
-  const preBal = document.getElementById("pre-balance");
-  const previousBalance = parseFloat(preBal.innerText);
+  // get previous balance
+  const getPreBalance = document.getElementById("pre-balance");
+  const preBalance = parseFloat(getPreBalance.innerText);
 
   // if the desire withdraw amount is grater than balance
-  if (newWithdraw > previousBalance) {
+  if (newWithdraw > preBalance) {
     alert("Insufficient Balance");
     return;
   }
 
   // total withdraw
-  const totalWithdraw = previousWithdraw + newWithdraw;
-  // total withdraw show in withdraw
-  preWithdraw.innerText = totalWithdraw;
+  const totalWithdraw = preWithdraw + newWithdraw;
+  // set total withdraw
+  getPreWithdraw.innerText = totalWithdraw;
 
-  // New balance
-  const newBalance = previousBalance - newWithdraw;
-  // Set new balance
-  preBal.innerText = newBalance;
+  // calculate total balance
+  const totalBalance = preBalance - newWithdraw;
+  // show total balance
+  getPreBalance.innerText = totalBalance;
 });

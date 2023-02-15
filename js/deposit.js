@@ -1,25 +1,27 @@
+// ---------- NOT USING COMMON FUNCTION -------------//
 document.getElementById("deposit-btn").addEventListener("click", function () {
-  //new deposit
-  const depositInput = document.getElementById("deposit-input");
-  const newDeposit = parseFloat(depositInput.value);
+  // new deposit
+  const getNewDeposit = document.getElementById("deposit-input");
+  const newDeposit = parseFloat(getNewDeposit.value);
 
-  //previous deposit
-  const preDepo = document.getElementById("pre-deposit");
-  const previousDeposit = parseFloat(preDepo.innerText);
+  // previous deposit
+  const getPreDeposit = document.getElementById("pre-deposit");
+  const preDeposit = parseFloat(getPreDeposit.innerText);
 
   // total deposit
-  const totalDeposit = previousDeposit + newDeposit;
-  // total deposit show in deposit
-  preDepo.innerText = totalDeposit;
+  const totalDeposit = preDeposit + newDeposit;
+  // set total deposit
+  getPreDeposit.innerText = totalDeposit;
 
   // previous balance
-  const preBal = document.getElementById("pre-balance");
-  const previousBalance = parseFloat(preBal.innerText);
-  // total balance
-  const totalBalance = previousBalance + newDeposit;
-  // Set total balance
-  preBal.innerText = totalBalance;
+  const getPreBalance = document.getElementById("pre-balance");
+  const preBalance = parseFloat(getPreBalance.innerText);
 
-  // clear deposit input
-  depositInput.value = "";
+  // total balance
+  const totalBalance = preBalance + newDeposit;
+  // set total balance
+  getPreBalance.innerText = totalBalance;
+
+  // clear
+  getNewDeposit.value = "";
 });
