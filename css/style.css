@@ -66,3 +66,84 @@
   font-weight: 700;
   color: #fff;
 }
+
+/* bank.html page css */
+.account-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.account-details h3 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.sectiont-title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.item {
+  padding: 50px;
+}
+
+.item h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.item h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.deposit {
+  background: #03cd46;
+}
+.withdraw {
+  background: #9a6853;
+}
+.balance {
+  background: #f4c801;
+}
+.newD-newW {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+.new-deposit {
+  background: #0076be;
+  border-radius: 30px;
+}
+.new-withdraw {
+  background: #da4427;
+  border-radius: 30px;
+}
+.account-details input {
+  height: 40px;
+  border: navajowhite;
+  padding: 20px 30px;
+  width: 290px;
+  border-radius: 4px;
+}
+#deposit-btn,
+#withdraw-btn {
+  padding: 10px 40px;
+  border: navajowhite;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+/* HIDE INPUT TYPE NUMBER FIELD ARROW */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
