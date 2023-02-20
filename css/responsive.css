@@ -1,0 +1,58 @@
+/*LG Device (desktops)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* --------bank page---------  */
+  .item h4 {
+    font-size: 26px;
+  }
+}
+/*MD devcie (Tablets)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* --------bank page---------  */
+  .sectiont-title h2 {
+    font-size: 42px;
+  }
+  .item {
+    padding: 40px;
+  }
+  .item h4 {
+    font-size: 25px;
+  }
+  .account-details {
+    flex-wrap: wrap;
+  }
+  .account-details input {
+    width: 240px;
+  }
+  .account-details h3 {
+    font-size: 28px;
+  }
+}
+/*SM Device (Phone)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .account-details {
+    flex-wrap: wrap;
+  }
+  .item {
+    padding: 35px;
+    margin-bottom: 30px;
+  }
+}
+/*Extra SM*/
+@media (max-width: 575px) {
+  .account-details {
+    flex-wrap: wrap;
+  }
+  .sectiont-title h2 {
+    font-size: 34px;
+  }
+  .item {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  .account-details input {
+    width: 240px;
+  }
+  .account-details h3 {
+    font-size: 28px;
+  }
+}
