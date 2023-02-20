@@ -1,5 +1,10 @@
 /*LG Device (desktops)*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* --------login page---------  */
+  .note {
+    font-size: 15px;
+    padding: 0 50px;
+  }
   /* --------bank page---------  */
   .item h4 {
     font-size: 26px;
@@ -29,6 +34,21 @@
 }
 /*SM Device (Phone)*/
 @media (min-width: 576px) and (max-width: 767px) {
+  /* --------login page---------  */
+  .slider-title h3 {
+    font-size: 25px;
+  }
+  .slider-title h2 {
+    font-size: 32px;
+  }
+  .user-input input {
+    height: 33px;
+    width: 225px;
+  }
+  #login-btn {
+    width: 225px;
+  }
+  /* --------bank page---------  */
   .account-details {
     flex-wrap: wrap;
   }
@@ -39,6 +59,26 @@
 }
 /*Extra SM*/
 @media (max-width: 575px) {
+  /* --------Login page---------  */
+  .slider-title h3 {
+    font-size: 14px;
+  }
+  .slider-title h2 {
+    font-size: 23px;
+  }
+  .user-input input {
+    height: 25px;
+    width: 130px;
+  }
+  #login-btn {
+    width: 130px;
+    padding: 2px 0;
+  }
+  .note {
+    font-size: 13px;
+    padding: 0px 5px;
+  }
+  /* --------bank page---------  */
   .account-details {
     flex-wrap: wrap;
   }

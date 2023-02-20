@@ -1,8 +1,9 @@
 .slider-area {
-  min-height: 100vh;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover; /* or contain */
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-position: center center;
+  min-height: 100vh;
 }
 .slider-area .container {
   background: #003d8f;
@@ -24,7 +25,6 @@
 }
 .slider-title h3 {
   color: #9d9d9d;
-  /* color: #cb2c2c; */
   font-weight: 600;
 }
 .user-input input {
